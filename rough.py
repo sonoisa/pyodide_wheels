@@ -1,0 +1,5 @@
+await micropip.install('https://raw.githubusercontent.com/psymbio/pyodide_wheels/main/multidict/multidict-4.7.6-py3-none-any.whl', keep_going=True)
+await micropip.install('https://raw.githubusercontent.com/psymbio/pyodide_wheels/main/frozenlist/frozenlist-1.4.0-py3-none-any.whl', keep_going=True)
+await micropip.install('https://raw.githubusercontent.com/psymbio/pyodide_wheels/main/aiohttp/aiohttp-4.0.0a2.dev0-py3-none-any.whl', keep_going=True)
+await micropip.install('https://raw.githubusercontent.com/psymbio/pyodide_wheels/main/openai_wheel/openai-1.3.7-py3-none-any.whl', keep_going=True)
+await micropip.install('https://raw.githubusercontent.com/psymbio/pyodide_wheels/main/urllib3/urllib3-2.1.0-py3-none-any.whl', keep_going=True)
