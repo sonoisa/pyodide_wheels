@@ -1,15 +1,15 @@
 source /emsdk/emsdk_env.sh
 
 cd /src
-git clone -b 0.5.2 --recursive https://github.com/openai/tiktoken
+git clone -b 0.8.0 --recursive https://github.com/openai/tiktoken
 cd tiktoken
 pyodide build
 
 
-# cd /src
-# git clone -b v1.3.7 --recursive https://github.com/openai/openai-python
-# cd openai-python
-# python3 -m build
+cd /src
+git clone -b v1.39.0 --recursive https://github.com/openai/openai-python
+cd openai-python
+python3 -m build
 
 
 # cd /src

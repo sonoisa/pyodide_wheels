@@ -50,12 +50,13 @@ RUN npm install -g \
   rollup-plugin-terser
 
 RUN pip3 --no-cache-dir install \
-  pyodide-build \
+  pyodide-build==0.26.3 \
   cython
 
 RUN git clone https://github.com/emscripten-core/emsdk.git && \
   cd emsdk && \
   PYODIDE_EMSCRIPTEN_VERSION=$(pyodide config get emscripten_version) && \
+  echo ${PYODIDE_EMSCRIPTEN_VERSION} && \
   ./emsdk install ${PYODIDE_EMSCRIPTEN_VERSION} && \
   ./emsdk activate ${PYODIDE_EMSCRIPTEN_VERSION}
 
